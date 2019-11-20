@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#carouselExampleControls {
+    margin-top:20px;
+}
+
+.navbar-brand img {
+    height: 20px;
+    width: 100px;
+    float: left;
+    margin-left: 100px;
+    
+}
+
+.warna {
+    background-color: red;
+}
+
+.card {
+    margin-top: 20px;
+
+}
+
+.merah {
+    background-color: crimson;
+}
+
+
+.carousel-inner img{
+    height: 368px;
+}
+
+.body-size {
+    height: 150px;
+    width: 150px;
+}
+
+.card-body h6 {
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 700;
+}
+
+.card-body .gam1 {
+    background: url('../gambar/mini-banner-1-raw.png');
+}
