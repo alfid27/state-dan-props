@@ -1,10 +1,17 @@
 import React, {Component} from 'react';
 class Grid extends Component {
-
+    constructor(props) {
+    super(props);
+    this.state = {
+        paragraf: "Ini menggunakan State",
+        namakelas :"card",
+        paragrafprp: props.propsa
+        
+    };
+};
     render() {
         return (
          <div>
-            <div className="container">
              <nav class="navbar navbar-expand-lg navbar-light warna">
                         <a class="navbar-brand" href="#"><img src={require('../logo/logo.png')}></img></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,10 +41,11 @@ class Grid extends Component {
                     </ul>
                 </div>
                 </nav>
+                <div className="container">
 
-                <div class="card">
+                <div class={this.state.namakelas}>
                     <div class="card-body warna">
-                        <h6>Berlangganan IndiHome bisa dapat internet cepat, nelpon rumah sepuasnya dan nonton beragam konten terbaik di layar TV interaktif</h6>
+                        {this.state.paragraf}
                     </div>
                 </div>
 
@@ -61,13 +69,12 @@ class Grid extends Component {
                         <span class="sr-only">Next</span>
                     </a>
                 </div> 
-               </div> 
-
+               </div>  
             <div class="col-md-3 ">
             <div class="card bg-light text-white">
   <img src={require('../gambar/mini-banner-1-raw.png')} class="card-img" alt="..."></img>
   <div class="card-img-overlay">
-    <h5 class="card-title">Berlangganan IndiHome Paket Gamer!</h5>
+    <h5 class="card-title">{this.state.paragrafprp}</h5>
     <p class="card-text"></p>
   </div>
 </div>
@@ -75,7 +82,7 @@ class Grid extends Component {
       <div class="card bg-light text-white">
   <img src={require('../gambar/mini-banner-2-raw.png')} class="card-img" alt="..."></img>
   <div class="card-img-overlay">
-    <h5 class="card-title">Berlangganan IndiHome Paket Premium</h5>
+        <h5 class="card-title">{this.props.isiparagraf}</h5>
     <p class="card-text"></p>
   </div>
 </div>            
